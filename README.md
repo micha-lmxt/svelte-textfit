@@ -2,8 +2,8 @@ svelte-textfit
 =========================
 
 [![npm](https://img.shields.io/badge/npm-svelte--textfit-brightgreen.svg?style=flat-square)]()
-[![npm version](https://img.shields.io/npm/v/react-textfit.svg?style=flat-square)](https://www.npmjs.com/package/svelte-textfit)
-[![npm downloads](https://img.shields.io/npm/dm/react-textfit.svg?style=flat-square)](https://www.npmjs.com/package/svelte-textfit)
+[![npm version](https://img.shields.io/npm/v/svelte-textfit.svg?style=flat-square)](https://www.npmjs.com/package/svelte-textfit)
+[![npm downloads](https://img.shields.io/npm/dm/svelte-textfit.svg?style=flat-square)](https://www.npmjs.com/package/svelte-textfit)
 
 Svelte action based on [react-textfit](https://github.com/malte-wessel/react-textfit)
 
