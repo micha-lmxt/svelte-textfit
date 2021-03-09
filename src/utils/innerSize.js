@@ -1,3 +1,9 @@
+/**
+ * Ported from react-textfit@1.1.1 
+ * The MIT License (MIT)
+ * 
+ * Copyright (c) 2015 react-textfit
+ * */
 // Calculate height without padding.
 export function innerHeight(el) {
     const style = window.getComputedStyle(el, null);

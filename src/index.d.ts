@@ -42,13 +42,13 @@ interface TextfitProps {
      */
     style : (node : Node, val : number) => node.style.fontSize = val + "px",
     /**
-     * The width that should be enforced. Use eigther width & height or parent.
+     * The width that should be enforced. Use either width & height or parent.
      * If parent is set, this is ignored
      * * Default: 100
      */
     width : number,
     /**
-     * The height that should be enforced. Use eigther width & height or parent.
+     * The height that should be enforced. Use either width & height or parent.
      * If parent is set, this is ignored
      * Default: 100
      */
@@ -84,7 +84,9 @@ interface TextfitProps {
     elementFitsHeight : (el : Node, width : number) => boolean
 }
 
-
+/**
+ * Textfit action 
+ */
 const textfit: (node: Node, props: TextfitProps) => ({
     update: (props: TextfitProps) => void,
     destroy: () => void

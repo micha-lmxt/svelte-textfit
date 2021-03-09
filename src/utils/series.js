@@ -1,4 +1,10 @@
 /**
+ * Ported from react-textfit@1.1.1 
+ * The MIT License (MIT)
+ * 
+ * Copyright (c) 2015 react-textfit
+ * */
+/**
  * Run the functions in the tasks array in series, each one running once the previous function has completed.
  * If any functions in the series pass an error to its callback, no more functions are run,
  * and callback is immediately called with the value of the error. Otherwise, callback receives an array of results

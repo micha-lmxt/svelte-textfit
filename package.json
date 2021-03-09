@@ -1,12 +1,23 @@
 {
   "name": "svelte-textfit",
   "version": "1.0.0",
-  "description": "",
+  "description": "Svelte action to fit headlines and paragraphs into any element. Ported from react-textfit",
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "micha-lmxt <micha-lmxt@lucht-familie.de> (https://micha-lmxt.lucht-familie.de)",
-  "license": "ISC"
+  "author": "micha-lmxt <micha-lmxt@gradientdescent.de> (https://gradientdescent.de)",
+  "license": "MIT",
+  "keywords": [
+    "textfit",
+    "fittext",
+    "text",
+    "svelte",
+    "sveltejs",
+    "svelte-action"
+  ],
+  "homepage": "https://github.com/micha-lmst/svelte-textfit",
+  "peerDependencies": {
+    "svelte": "^3.32.3"
+  }
 }

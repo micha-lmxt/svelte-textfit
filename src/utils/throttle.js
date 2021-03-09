@@ -1,4 +1,10 @@
 /**
+ * Ported from react-textfit@1.1.1 
+ * The MIT License (MIT)
+ * 
+ * Copyright (c) 2015 react-textfit
+ * */
+/**
  * Returns a new function that, when invoked, invokes `func` at most once per `wait` milliseconds.
  * Taken from https://github.com/component/throttle v1.0.0
  *
