@@ -114,7 +114,7 @@ npm install svelte-textfit --save-dev
 * `style` (function(node,value) : void) Custom function to apply to the node, when a new interpolated value is checked.
 * `width` & `height` (number) The width and height that should be enforced. Use either width & height or parent.
 * `parent` (ref) Parent. Container, that should be filled.
-* ``elementFitsWidth` & `elementFitsHeight` (function(node,width) : boolean) Custom functions which check, if the element fits the width/height.
+* `elementFitsWidth` & `elementFitsHeight` (function(node,width) : boolean) Custom functions which check, if the element fits the width/height.
 
 ## License
 
