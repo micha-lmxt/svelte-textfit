@@ -15,6 +15,8 @@ import { innerWidth, innerHeight } from "./utils/innerSize";
 
 function assertElementFitsWidth(el, width) {
     if (el.scrollWidth && el.scrollWidth>0){
+        console.log(el.scrollWidth,el.scrollWidth - 1 <= width - 1, width)
+
         // -1: temporary bugfix, will be refactored soon
         return el.scrollWidth - 1 <= width - 1;
     }
@@ -30,7 +32,8 @@ function assertElementFitsHeight(el, height) {
     
 }
 
-export function noop() {}
+function noop() {}
+
 
 export const textfit = (node, props) => {
    
@@ -49,8 +52,8 @@ export const textfit = (node, props) => {
             forceSingleModeWidth = true,
             onReady = noop,
             style = (node, val) => node.style.fontSize = val + "px",            
-            width=100,
-            height=100,
+            width,
+            height,
             parent,
             elementFitsWidth = assertElementFitsWidth,
             elementFitsHeight = assertElementFitsHeight
@@ -59,8 +62,8 @@ export const textfit = (node, props) => {
         const el = parent;
         const wrapper = node;
 
-        let originalWidth = width;
-        let originalHeight = height;
+        let originalWidth = width||wrapper.scrollWidth||wrapper.offsetWidth;
+        let originalHeight = height||wrapper.scrollHeight||wrapper.offsetHeight;
 
         if (parent){
             originalWidth = innerWidth(el);
@@ -125,7 +128,7 @@ export const textfit = (node, props) => {
                 low = min;
                 high = mid;
                 return whilst(
-                    () => low < high,
+                    () => low <= high,
                     whilstCallback => {
                         if (shouldCancelProcess()) return whilstCallback(true);
                         mid = parseInt((low + high) / 2, 10);
@@ -154,6 +157,7 @@ export const textfit = (node, props) => {
 
                 // Sanity check:
                 mid = Math.max(mid, 0);
+                
 
                 if (shouldCancelProcess()) return stepCallback(true);
                 fontSize = mid;
@@ -189,7 +193,6 @@ export const textfit = (node, props) => {
 
         },
         update: (props)=>{
-
             tick().then(_=>execution(props));
         }
     }
