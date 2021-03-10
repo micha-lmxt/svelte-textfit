@@ -15,7 +15,6 @@ import { innerWidth, innerHeight } from "./utils/innerSize";
 
 function assertElementFitsWidth(el, width) {
     if (el.scrollWidth && el.scrollWidth>0){
-        console.log(el.scrollWidth,el.scrollWidth - 1 <= width - 1, width)
 
         // -1: temporary bugfix, will be refactored soon
         return el.scrollWidth - 1 <= width - 1;
