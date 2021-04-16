@@ -36,7 +36,7 @@ npm install svelte-textfit --save-dev
   let parent;
 </script>
 <div bind:this={parent}>
-  <h1 use:textfit={{parent,mode="single"}}>
+  <h1 use:textfit={{parent,mode:"single"}}>
     Fat headline!
   </h1>
 </div>
@@ -50,8 +50,8 @@ npm install svelte-textfit --save-dev
 </script>
 <div use:textfit={
   {
-    mode="single", width:1000, height:100,
-    forceSingleModeWidth=false
+    mode:"single", width:1000, height:100,
+    forceSingleModeWidth:false
   }
 }>      
   Fat headline!
@@ -66,7 +66,7 @@ npm install svelte-textfit --save-dev
   let parent;
 </script>
 <div bind:this={parent}>
-  <p use:textfit={{mode="multi",parent}}>
+  <p use:textfit={{mode:"multi",parent}}>
     Lorem <strong>ipsum</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   </p>
 <div>
