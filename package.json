@@ -1,6 +1,6 @@
 {
   "name": "svelte-textfit",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Svelte action to fit headlines and paragraphs into any element. Ported from react-textfit",
   "main": "src/index.js",
   "types": "src/index.d.ts",
@@ -16,7 +16,7 @@
     "sveltejs",
     "svelte-action"
   ],
-  "homepage": "https://github.com/micha-lmst/svelte-textfit",
+  "homepage": "https://github.com/micha-lmxt/svelte-textfit",
   "peerDependencies": {
     "svelte": "^3.32.3"
   }
